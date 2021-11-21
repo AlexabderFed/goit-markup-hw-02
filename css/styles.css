@@ -1,26 +1,103 @@
 /* Цвет основного фона body #FFFFFF*/
-/* Цвет осеовного текста #212121 */
+/* Цвет основного текста #212121 */
 /* Цвет вторичного текста #757575 */
 /* Цвет акцента #2196F3 */
-.page {
-  background-color: #ffffff;
-  color: #212121;
+/* Цвет секции hero #2F303A*/
+/* Цвет секции advantage #E5E5E5*/
+/* Цвет секции example #E5E5E5*/
+/* Цвет секции employees #F5F4FA*/
+/* Цвет header #FFFFFF*/
+/* Цвет footer #2F303A*/
+
+:root {
+  --primery-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --white-color: #ffffff;
+  --hero-footer-background-color: #2f303a;
+  --section-advantage-example-background-color: #e5e5e5;
+  --section-employees-background-color: #f5f4fa;
+  --footer-contact-color: rgba(255, 255, 255, 0.6);
 }
-/* Цвет текста  */
-.logo {
-  color: #212121;
-}
-.logo:hover,
-.logo:focus {
-  color: #2196f3;
-}
-/* Span цвет */
-.accent {
-  color: #2196f3;
-}
-.header__item:first-child {
-  color: red;
-}
-.header__item {
+
+.list {
   list-style: none;
+}
+
+.title {
+  color: var(--title-text-color);
+}
+
+.section .text {
+  color: var(--primery-text-color);
+}
+/* Body */
+.page {
+  color: var(--primery-text-color);
+  background-color: var(--white-color);
+}
+/* page-header */
+
+/* header__link--logo */
+.header__link--logo {
+  color: var(--title-text-color);
+}
+
+.color__text--logo {
+  color: var(--accent-color);
+}
+
+/* header__nav */
+.header__nav .link {
+  color: var(--title-text-color);
+}
+.header__nav .link:hover,
+.header__nav .link:focus {
+  color: var(--accent-color);
+}
+
+/* contact */
+.mail {
+  color: var(--accent-color);
+}
+.tel {
+  color: var(--primery-text-color);
+}
+
+/* section hero */
+.hero {
+  color: var(--white-color);
+  background-color: var(--hero-footer-background-color);
+}
+
+.hero__button {
+  color: var(--accent-color);
+}
+
+.section .advantage {
+  color: var(--title-text-color);
+  background-color: var(--section-advantage-example-background-color);
+}
+
+.section .example {
+  color: var(--title-text-color);
+  background-color: var(--section-advantage-example-background-color);
+}
+
+.section-employees {
+  color: var(--title-text-color);
+  background-color: var(--section-employees-background-color);
+}
+
+.page__footer {
+  color: var(--white-color);
+  background-color: var(--hero-footer-background-color);
+}
+
+.footer__link--logo {
+  color: var(--white-color);
+}
+
+.footer__contact {
+  color: var(--footer-contact-color);
 }
