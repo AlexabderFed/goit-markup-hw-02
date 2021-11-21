@@ -1,0 +1,26 @@
+/* Цвет основного фона body #FFFFFF*/
+/* Цвет осеовного текста #212121 */
+/* Цвет вторичного текста #757575 */
+/* Цвет акцента #2196F3 */
+.page {
+  background-color: #ffffff;
+  color: #212121;
+}
+/* Цвет текста  */
+.logo {
+  color: #212121;
+}
+.logo:hover,
+.logo:focus {
+  color: #2196f3;
+}
+/* Span цвет */
+.accent {
+  color: #2196f3;
+}
+.header__item:first-child {
+  color: red;
+}
+.header__item {
+  list-style: none;
+}
