@@ -1,6 +1,6 @@
 /* Цвет основного фона body #FFFFFF*/
-/* Цвет основного текста #212121 */
-/* Цвет вторичного текста #757575 */
+/* Цвет основного текста #757575 */
+/* Цвет вторичного текста #212121 */
 /* Цвет акцента #2196F3 */
 /* Цвет секции hero #2F303A*/
 /* Цвет секции advantage #E5E5E5*/
@@ -8,15 +8,16 @@
 /* Цвет секции employees #F5F4FA*/
 /* Цвет header #FFFFFF*/
 /* Цвет footer #2F303A*/
+/* Необходимый вес для Raleway – 700, а для Roboto – 400, 500, 700 и 900. */
 
 :root {
   --primery-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --white-color: #ffffff;
-  --hero-footer-background-color: #2f303a;
-  --section-advantage-example-background-color: #e5e5e5;
-  --section-employees-background-color: #f5f4fa;
+  --hero-footer-bcg-color: #2f303a;
+  --primery-bcg-color: #e5e5e5;
+  --employees-bcg-color: #f5f4fa;
   --footer-contact-color: rgba(255, 255, 255, 0.6);
 }
 
@@ -28,76 +29,102 @@
   color: var(--title-text-color);
 }
 
-.section .text {
-  color: var(--primery-text-color);
-}
 /* Body */
-.page {
+body {
   color: var(--primery-text-color);
   background-color: var(--white-color);
+  font-family: Roboto, sans-serif;
 }
-/* page-header */
-
-/* header__link--logo */
+/* Хедер */
+.page-header {
+  background-color: white;
+}
+/* Логотип */
 .header__link--logo {
   color: var(--title-text-color);
+  font-family: Raleway, sans-serif;
+  font-style: Bold;
 }
 
 .color__text--logo {
   color: var(--accent-color);
 }
+.header__link--logo:hover,
+.header__link--logo:focus {
+  color: var(--accent-color);
+}
 
-/* header__nav */
-.header__nav .link {
+/* Навигация сайта */
+.header-nav .link {
   color: var(--title-text-color);
 }
-.header__nav .link:hover,
-.header__nav .link:focus {
+.header-nav .link:hover,
+.header-nav .link:focus {
   color: var(--accent-color);
 }
 
-/* contact */
-.mail {
-  color: var(--accent-color);
-}
-.tel {
+/* Контакты */
+.contact .link {
   color: var(--primery-text-color);
 }
 
-/* section hero */
-.hero {
-  color: var(--white-color);
-  background-color: var(--hero-footer-background-color);
-}
-
-.hero__button {
+.contact .link:hover,
+.contact .link:focus {
   color: var(--accent-color);
 }
 
-.section .advantage {
-  color: var(--title-text-color);
-  background-color: var(--section-advantage-example-background-color);
-}
-
-.section .example {
-  color: var(--title-text-color);
-  background-color: var(--section-advantage-example-background-color);
-}
-
-.section-employees {
-  color: var(--title-text-color);
-  background-color: var(--section-employees-background-color);
-}
-
-.page__footer {
+/* Секция Герой */
+.hero {
   color: var(--white-color);
-  background-color: var(--hero-footer-background-color);
+  background-color: var(--hero-footer-bcg-color);
+}
+
+.hero-button {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
+
+/* Секция наши преимущества  */
+.advantage {
+  color: var(--primery-text-color);
+  background-color: var(--primery-bcg-color);
+}
+
+/* Секция примеры работ */
+.work-example {
+  color: var(--primery-text-color);
+  background-color: var(--primery-bcg-color);
+}
+
+/* Секция сотрудники */
+.employees {
+  color: var(--primery-text-color);
+  background-color: var(--employees-bcg-color);
+}
+
+/* Футер */
+.page-footer {
+  color: var(--white-color);
+  background-color: var(--hero-footer-bcg-color);
 }
 
 .footer__link--logo {
   color: var(--white-color);
+  font-family: Raleway, sans-serif;
+  font-style: Bold;
+}
+.footer__link--logo:hover,
+.footer__link--logo:focus {
+  color: var(--accent-color);
 }
 
-.footer__contact {
+.footer-contact .link {
   color: var(--footer-contact-color);
 }
+
+.footer-contact .link:hover,
+.footer-contact .link:focus {
+  color: var(--accent-color);
+}
+
+/* Portfolio */
