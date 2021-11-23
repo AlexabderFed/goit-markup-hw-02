@@ -201,7 +201,7 @@ body {
 .project-card-link {
   text-decoration: none;
 }
-.filter-list button {
+button {
   color: var(--title-text-color);
   font-family: inherit;
   font-weight: 500;
