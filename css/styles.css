@@ -25,10 +25,6 @@
   list-style: none;
 }
 
-.title {
-  color: var(--title-text-color);
-}
-
 /* Body */
 body {
   color: var(--primery-text-color);
@@ -37,6 +33,12 @@ body {
   letter-spacing: 0.03em;
 }
 /* Хедер */
+.page-header {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
 
 /* Логотип */
 .header__link--logo {
@@ -45,6 +47,7 @@ body {
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
+  text-decoration: none;
 }
 
 .color__text--logo {
@@ -56,12 +59,10 @@ body {
 }
 
 /* Навигация сайта */
+
 .header-nav .link {
   color: var(--title-text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  text-decoration: none;
 }
 .header-nav .link:hover,
 .header-nav .link:focus {
@@ -71,6 +72,7 @@ body {
 /* Контакты */
 .contact .link {
   color: var(--primery-text-color);
+  text-decoration: none;
 }
 
 .contact .link:hover,
@@ -108,16 +110,57 @@ body {
   background-color: var(--primery-bcg-color);
 }
 
+.advantage-title {
+  color: var(--title-text-color);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.advantage-text {
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 1.71;
+  /* or 171% */
+  letter-spacing: 0.03em;
+}
 /* Секция примеры работ */
 .work-example {
   color: var(--primery-text-color);
   background-color: var(--primery-bcg-color);
+}
+.work-example-title {
+  color: var(--title-text-color);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
 }
 
 /* Секция сотрудники */
 .employees {
   color: var(--primery-text-color);
   background-color: var(--employees-bcg-color);
+}
+.employees-title {
+  color: var(--title-text-color);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+.card-title {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+}
+.card-text {
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
 }
 
 /* Футер */
@@ -129,7 +172,10 @@ body {
 .footer__link--logo {
   color: var(--white-color);
   font-family: Raleway, sans-serif;
-  font-style: Bold;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
 }
 .footer__link--logo:hover,
 .footer__link--logo:focus {
@@ -138,11 +184,18 @@ body {
 
 .footer-contact .link {
   color: var(--footer-contact-color);
+  text-decoration: none;
+  font-style: normal;
 }
 
 .footer-contact .link:hover,
 .footer-contact .link:focus {
   color: var(--accent-color);
+}
+.footer-text {
+  font-size: 14px;
+  line-height: 1.71;
+  font-style: normal;
 }
 
 /* Portfolio */
