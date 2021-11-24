@@ -53,7 +53,8 @@ body {
   text-decoration: none;
 }
 .header-nav .link:hover,
-.header-nav .link:focus {
+.header-nav .link:focus,
+.header-nav .current {
   color: var(--accent-color);
 }
 
