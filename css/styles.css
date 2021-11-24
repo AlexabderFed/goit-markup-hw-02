@@ -6,6 +6,7 @@
   --primery-bcg-color: #ffffff;
   --employees-bcg-color: #f5f4fa;
   --footer-contact-color: rgba(255, 255, 255, 0.6);
+  --hero-button-hover-color: #188ce8;
 }
 
 .list {
@@ -87,6 +88,11 @@ body {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--hero-button-hover-color);
 }
 
 /* Секция наши преимущества  */
@@ -207,4 +213,11 @@ button {
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
+  cursor: pointer;
+}
+
+button:hover,
+button:focus {
+  color: var(--primery-bcg-color);
+  background-color: var(--accent-color);
 }
