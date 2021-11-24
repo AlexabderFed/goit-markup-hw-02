@@ -79,7 +79,7 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-
+/* Кнопка в Герое */
 .hero-button {
   color: var(--primery-bcg-color);
   background-color: var(--accent-color);
@@ -206,6 +206,8 @@ body {
 .project-card-link {
   text-decoration: none;
 }
+
+/* Стидизация кнопки */
 button {
   color: var(--title-text-color);
   font-family: inherit;
