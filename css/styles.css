@@ -11,6 +11,10 @@ h6 {
   padding: 0px;
   margin: 0px;
 }
+p {
+  padding: 0px;
+  margin: 0px;
+}
 :root {
   --primery-text-color: #757575;
   --title-text-color: #212121;
@@ -152,6 +156,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .advantage-text {
@@ -199,6 +204,7 @@ body {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
+  margin-bottom: 10px;
 }
 .card-text {
   font-size: 16px;
@@ -242,6 +248,7 @@ body {
   font-size: 14px;
   line-height: 1.71;
   font-style: normal;
+  margin-bottom: 9px;
 }
 
 /* Portfolio */
