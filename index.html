@@ -7,31 +7,38 @@
     <title>WebStudio</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"/>
     <link rel="stylesheet" href="./css/styles.css" />
 </head> 
 <body class="page">
     <!-- Шапка страницы -->
     <header class="page-header">
-        <a href="./index.html" class="header__link--logo"><span class="color__text--logo">Web</span>Studio</a>
-        <nav>
-            <ul class="header-nav list">
-                <li class="header-item"><a class="link current" href="./index.html">Студия</a></li>
-                <li class="header-item"><a class="link" href="./portfolio.html">Портфолио</a></li>
-                <li class="hheader-item"><a class="link" href="">Контакты</a></li>
-            </ul>
-        </nav>
-            <ul class="contact list">
-                <li><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li><a class="link" href="tel+380961111111">+38 096 111 11 11</a></li>
-            </ul>
+        <div class="conteiner">
+            <a href="./index.html" class="header__link--logo"><span class="color__text--logo">Web</span>Studio</a>
+                <nav>
+                    <ul class="header-nav list">
+                        <li class="header-item"><a class="link current" href="./index.html">Студия</a></li>
+                        <li class="header-item"><a class="link" href="./portfolio.html">Портфолио</a></li>
+                        <li class="hheader-item"><a class="link" href="">Контакты</a></li>
+                    </ul>
+                </nav>
+                    <ul class="contact list">
+                        <li><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                        <li><a class="link" href="tel+380961111111">+38 096 111 11 11</a></li>
+                    </ul>
+        </div>
     </header>
     <!-- Уникальный контент страницы -->
     <main>
-    <section class="hero">
+    
+        <section class="hero">
+            <div class="conteiner">
         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
         <button class="hero-button" type="button">Заказать услугу</button>
+        </div>
     </section>
     <section class="advantage">
+        <div class="conteiner">
     <!--Скрытый заголовок-->
     
         <h2 class="advantage-hidden">Наши преимущества</h2>
@@ -48,17 +55,21 @@
                 <li>
                     <h3 class="advantage-title">Современные технологии</h3>
                     <p class="advantage-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p></li>
-                </ul>   
+                </ul>  
+                </div>
     </section>
     <section class="work-example">
+        <div class="conteiner">
         <h2 class="work-example-title">Чем мы занимаемся</h2>
             <ul class="example-images list">
                 <li><img src="./images/img.jpg" alt="клавиатура и планшет" width="370"/></li>
                 <li><img src="./images/img-2.jpg" alt="смартфон и ноутбук" width="370"/></li>
                 <li><img src="./images/img-3.jpg" alt="планшет" width="370"/></li>
             </ul>
+            </div>
     </section>
     <section class="employees">
+        <div class="conteiner">
         <h2 class="employees-title">Наша команда</h2>
             <ul class="employees-cards list">
                 <li>
@@ -83,10 +94,13 @@
                     <p class="card-text" lang="en">UI Designer</p>
                 </li> 
             </ul>
+            </div>
     </section>
+  
     </main>
     <!-- Подвал страницы -->
     <footer class="page-footer">
+        <div class="conteiner">
         <a href="/" class="footer__link--logo"><span class="color__text--logo">Web</span>Studio</a>
         <address>
             <ul class="footer-contact list">
@@ -95,6 +109,7 @@
                 <li><a class="link" href="tel+380961111111">+38 096 111 11 11</a></li>
             </ul>
         </address>
+        </div>
     </footer>
 </body>
 </html>

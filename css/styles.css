@@ -1,3 +1,16 @@
+ul {
+  padding: 0px;
+  margin: 0px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0px;
+  margin: 0px;
+}
 :root {
   --primery-text-color: #757575;
   --title-text-color: #212121;
@@ -11,6 +24,15 @@
 
 .list {
   list-style: none;
+}
+/* Контейнер Центровочный */
+.conteiner {
+  margin-right: auto;
+  margin-left: auto;
+  width: 1200px;
+  outline: 1px solid red;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 /* Body */
@@ -26,6 +48,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  border-bottom: 1px solid #ececec;
 }
 
 /* Логотип */
@@ -74,6 +97,8 @@ body {
 .hero {
   background-color: var(--hero-footer-bcg-color);
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 280px;
 }
 
 .hero-title {
@@ -83,6 +108,13 @@ body {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  text-align: center;
+  outline: 1px solid red;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 696px;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 /* Кнопка в Герое */
@@ -105,6 +137,13 @@ body {
 .advantage {
   color: var(--primery-text-color);
   background-color: var(--primery-bcg-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
+  outline: 2px solid tomato;
+}
+
+.advantage-hidden {
+  display: none;
 }
 
 .advantage-title {
@@ -124,19 +163,27 @@ body {
 .work-example {
   color: var(--primery-text-color);
   background-color: var(--primery-bcg-color);
+  outline: 2px solid tomato;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
+
 .work-example-title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 /* Секция сотрудники */
 .employees {
   color: var(--primery-text-color);
   background-color: var(--employees-bcg-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
+  outline: 2px solid yellowgreen;
 }
 .employees-title {
   color: var(--title-text-color);
@@ -144,6 +191,7 @@ body {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+  margin-bottom: 50px;
 }
 .card-title {
   color: var(--title-text-color);
